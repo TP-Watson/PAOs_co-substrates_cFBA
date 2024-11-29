@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="Basic_model_cFBA" name="Basic model cFBA">
+    <listOfCompartments>
+      <compartment id="cytoplasm" name="Cytoplasm" spatialDimensions="3" constant="true"/>
+      <compartment id="extracellular_space" name="Extracellular Space" spatialDimensions="3" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="Acetate" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="AcCoA" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Glyc" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="G6P" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="F6P" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="F16P" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="DHAP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="GA3P" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PG3" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PEP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Pyr" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="OAA" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Cit" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="iCit" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="aKG" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="SuccCoA" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Succ" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Fum" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Mal" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Glx" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PrCoA" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PHB" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PH2MV" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PHV" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="ATP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="NADH" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="FADH2" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="CO2" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="PolyP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Biomass" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>1</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Asp_ext" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>true</isImbalanced>
+            <wContribution>0</wContribution>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Asp" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="Adenylsucc" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="AMP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+      <species id="IMP" compartment="cytoplasm" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false">
+        <annotation>
+          <metadata>
+            <isImbalanced>false</isImbalanced>
+          </metadata>
+        </annotation>
+      </species>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction id="Ac_1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Acetate" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Glyc_S" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G6P" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Glyc" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Glyc_D" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Glyc" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="G6P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="G6P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="F6P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="F6P" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="F16P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="F16P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DHAP" stoichiometry="1" constant="true"/>
+          <speciesReference species="GA3P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP4" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHAP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="GA3P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP5" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="GA3P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PG3" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP6" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PG3" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PEP" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="EMP7" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PEP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Pyr" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="FBPase" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="F16P" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="F6P" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Pyr" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="OAA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Cit" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Cit" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="iCit" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA4" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="iCit" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="aKG" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA5" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="aKG" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SuccCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA6" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="SuccCoA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Succ" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA7" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Succ" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Fum" stoichiometry="1" constant="true"/>
+          <speciesReference species="FADH2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA8" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Fum" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mal" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="TCA9" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="OAA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mal" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="NADH_FADH" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="FADH2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Succ_prop" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="SuccCoA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PrCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="GS1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="iCit" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Succ" stoichiometry="1" constant="true"/>
+          <speciesReference species="Glx" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="GS2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="Glx" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Mal" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PEPCK" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="OAA" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PEP" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PEPC" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PEP" stoichiometry="1" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="OAA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ETC_NADH" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" stoichiometry="1.85" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ETC_FADH2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="FADH2" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" stoichiometry="1.35" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PolyP_S" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PolyP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PolyP_D" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PolyP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PHB_S" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AcCoA" stoichiometry="2" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PHB" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PHB_D" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PHB" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcCoA" stoichiometry="2" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PH2MV_S" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PrCoA" stoichiometry="2" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PH2MV" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PH2MV_D" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PH2MV" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PrCoA" stoichiometry="2" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PHV_S" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PrCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="PHV" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="0"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PHV_D" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="PHV" stoichiometry="1" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="2" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AcCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="PrCoA" stoichiometry="1" constant="true"/>
+          <speciesReference species="NADH" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="0"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="BM" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AcCoA" stoichiometry="0.635" constant="true"/>
+          <speciesReference species="ATP" stoichiometry="1.7" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="NADH" stoichiometry="0.89" constant="true"/>
+          <speciesReference species="CO2" stoichiometry="0.27" constant="true"/>
+          <speciesReference species="Biomass" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Maint" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0.03"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0.03"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0.03"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="0.03"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="CO2_im" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="CO2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="-1000"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="-1000"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="-1000"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="-1000"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="-1000"/>
+            <localParameter id="UB_4" value="1000"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="1000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Vcomp" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Acetate" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Ac_Feed" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="Acetate" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="0"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="1000"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="1000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Asp_Feed" reversible="true" fast="false">
+        <listOfProducts>
+          <speciesReference species="Asp_ext" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="0"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="0"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="0"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="0"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="1000"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="1000"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Asp_up" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+          <speciesReference species="Asp_ext" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Asp" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Asp_oxidase" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Asp" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="OAA" stoichiometry="1" constant="true"/>
+          <speciesReference species="FADH2" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PN1" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="ATP" stoichiometry="1" constant="true"/>
+          <speciesReference species="Asp" stoichiometry="1" constant="true"/>
+          <speciesReference species="IMP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Adenylsucc" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PN2" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="Adenylsucc" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Fum" stoichiometry="1" constant="true"/>
+          <speciesReference species="AMP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+      <reaction id="PN3" reversible="true" fast="false">
+        <listOfReactants>
+          <speciesReference species="AMP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="IMP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <listOfLocalParameters>
+            <localParameter id="LB_0" value="0"/>
+            <localParameter id="UB_0" value="1000"/>
+            <localParameter id="LB_1" value="0"/>
+            <localParameter id="UB_1" value="1000"/>
+            <localParameter id="LB_2" value="0"/>
+            <localParameter id="UB_2" value="1000"/>
+            <localParameter id="LB_3" value="0"/>
+            <localParameter id="UB_3" value="1000"/>
+            <localParameter id="LB_4" value="0"/>
+            <localParameter id="UB_4" value="0"/>
+            <localParameter id="LB_5" value="0"/>
+            <localParameter id="UB_5" value="0"/>
+          </listOfLocalParameters>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
